@@ -14,5 +14,5 @@ void print_square(double x)
 
 int main()
 {
-    print square(1.234);
+    print_square(1.234);
 }
