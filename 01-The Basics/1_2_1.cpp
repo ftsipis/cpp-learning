@@ -9,7 +9,7 @@ double square(double x)
 
 void print_square(double x)
 {
-    cout<<"the square of"<<x<<"is"<<square(x)<<"\n";
+    cout<<"the square of "<<x<<" is "<<square(x)<<"\n";
 }
 
 int main()
