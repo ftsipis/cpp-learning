@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void adc()           // generate a random int from 0 to 4095
+int adc()           // generate a random int from 0 to 4095
 {
     random_device dev;
     mt19937 rng(dev());
