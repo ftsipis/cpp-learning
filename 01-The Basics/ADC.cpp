@@ -1,5 +1,5 @@
 #include <iostream>
-#include <random 50>
+#include <random>
 
 using namespace std;
 
