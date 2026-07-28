@@ -14,6 +14,6 @@ int adc()           // generate a random int from 0 to 4095
 
 int main()
 {
-    cout << adc() <<"/n";
+    cout << adc() <<"\n";
     return 0;
 }
