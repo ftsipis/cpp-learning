@@ -3,12 +3,13 @@
 
 using namespace std;
 
-int adc()           // generate a random int from 0 to 4095
-{
-    static random_device dev;
-    static mt19937 rng(dev());
-    static uniform_int_distribution<mt19937::result_type> dist(0,4095); // distribution in range [1, 6]
+// Simulates one read from a 12-bit ADC: retuns raw counts in [0, 4095].
+constexpr int adc_max_counts = 4095;    // 2^12 - 1
 
+int adc_read()
+{
+    static mt19937 rng(random_device{}dev());
+    static uniform_int_distribution<int> dist(0,adc_max_counts);
     return dist(rng);
 }
 
