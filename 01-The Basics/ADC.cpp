@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Simulates one read from a 12-bit ADC: retuns raw counts in [0, 4095].
+// Simulates one read from a 12-bit ADC: returns raw counts in [0, 4095].
 constexpr int adc_max_counts = 4095;    // 2^12 - 1
 
 int adc_read()
@@ -16,6 +16,5 @@ int adc_read()
 
 int main()
 {
-    cout << adc_read() <<"\n";
-    return 0;
+    // TODO: fill a 16-count buffer by calling adc_read(), then process it.
 }
