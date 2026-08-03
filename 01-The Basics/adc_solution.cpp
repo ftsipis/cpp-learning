@@ -25,10 +25,5 @@ int main()
         x = adc_read();
     }
 
-    for (auto& x : buffer)
-    {
-        cout << x << '\n';
-    }
-
     return 0;
 }
