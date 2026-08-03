@@ -15,7 +15,7 @@ int adc_read()
     return dist(rng);
 }
 
-void print_buffer(int buffer[])
+void print_buffer(int buffer)
 {
     for (auto& x : buffer);
     {
