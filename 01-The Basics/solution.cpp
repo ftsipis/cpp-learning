@@ -26,7 +26,7 @@ int main()
         buffer[x] = adc_read();
     }
 
-    for (auto& x : buffer_size)
+    for (auto& x : buffer)
     {
         cout << *p << '\n';
         ++p;
