@@ -41,7 +41,7 @@ int main()
              << "max -> Maximum Sample\n"
              << "ave -> Average of Samples\n"
              << "cla -> Clamp\n"
-             << "rev -> Reverse the Samples";
+             << "rev -> Reverse the Samples\n";
         
         break;
     }
