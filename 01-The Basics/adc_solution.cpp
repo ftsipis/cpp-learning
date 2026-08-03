@@ -17,7 +17,7 @@ int adc_read()
 
 void print_buffer(int buffer[])
 {
-    for (auto& x : buffer);
+    for (auto& x : buffer[buffer_size]);
     {
         cout << x << '\n';
     }
