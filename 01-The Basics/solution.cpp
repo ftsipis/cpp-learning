@@ -28,8 +28,7 @@ int main()
 
     for (auto& x : buffer)
     {
-        cout << *p << '\n';
-        ++p;
+        cout << x << '\n';
     }
 
     return 0;
