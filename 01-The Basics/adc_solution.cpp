@@ -15,8 +15,16 @@ int adc_read()
     return dist(rng);
 }
 
-int main()
+void print_buffer(int buffer[])
 {
+    for (auto& x : buffer);
+    {
+        cout << x << '\n';
+    }
+}
+
+int main()
+
     // TODO: fill a 16-count buffer by calling adc_read(), then process it.
     int buffer[buffer_size];
 
@@ -24,6 +32,8 @@ int main()
     {
         x = adc_read();
     }
+
+    print_buffer(buffer);
 
     return 0;
 }
