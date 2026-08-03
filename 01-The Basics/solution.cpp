@@ -19,7 +19,6 @@ int main()
 {
     // TODO: fill a 16-count buffer by calling adc_read(), then process it.
     int buffer[buffer_size];
-    int *p = buffer;
 
     for (auto& x : buffer)
     {
