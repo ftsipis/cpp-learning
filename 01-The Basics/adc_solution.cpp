@@ -36,9 +36,12 @@ int main()
     while(1)
     {
         cout << "Select: \n"
-             << "p -> Print Values\n"
-             << "min -> Minimum Value\n"
-             << "max -> Maximum Value\n";
+             << "pri -> Print Samples\n"
+             << "min -> Minimum Sample\n"
+             << "max -> Maximum Sample\n"
+             << "ave -> Average of Samples\n"
+             << "cla -> Clamp\n"
+             << "rev -> Reverse the Samples";
         
         break;
     }
