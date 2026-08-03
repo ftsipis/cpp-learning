@@ -33,7 +33,7 @@ int main()
         x = adc_read();
     }
 
-    print_buffer(buffer);
+    print_buffer(buffer[]);
 
     return 0;
 }
