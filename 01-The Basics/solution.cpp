@@ -23,7 +23,7 @@ int main()
 
     for (auto& x : buffer)
     {
-        buffer[x] = adc_read();
+        &x = adc_read();
     }
 
     for (auto& x : buffer)
