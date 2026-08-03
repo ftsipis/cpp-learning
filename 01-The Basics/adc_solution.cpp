@@ -35,10 +35,10 @@ int main()
 
     while(1)
     {
-        cout << 'Select: '
-             << 'p -> Print Values'
-             << 'min -> Minimum Value'
-             << 'max -> Maximum Value';
+        cout << "Select: \n"
+             << "p -> Print Values\n"
+             << "min -> Minimum Value\n"
+             << "max -> Maximum Value\n";
         
         break;
     }
