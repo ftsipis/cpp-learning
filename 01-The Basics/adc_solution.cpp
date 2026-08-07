@@ -23,28 +23,32 @@ void print_buffer(int buffer[])
     }
 }
 
+int minimum (int buffer[])
+{
+    return min(buffer);
+}
+
 int main()
 {
     // TODO: fill a 16-count buffer by calling adc_read(), then process it.
     int buffer[buffer_size];
+    char* input;
 
     for (auto& x : buffer)
     {
         x = adc_read();
     }
 
-    while(1)
-    {
-        cout << "Select: \n"
-             << "pri -> Print Samples\n"
-             << "min -> Minimum Sample\n"
-             << "max -> Maximum Sample\n"
-             << "ave -> Average of Samples\n"
-             << "cla -> Clamp\n"
-             << "rev -> Reverse the Samples\n";
+    cout << "Select: \n"
+         << "pri -> Print Samples\n"
+         << "min -> Minimum Sample\n"
+         << "max -> Maximum Sample\n"
+         << "ave -> Average of Samples\n"
+         << "cla -> Clamp\n"
+         << "rev -> Reverse the Samples\n";
         
-        break;
-    }
-
+    cin >> in;
+    cout << in;
+    
     return 0;
 }
