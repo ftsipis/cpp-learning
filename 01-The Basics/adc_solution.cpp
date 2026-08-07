@@ -53,11 +53,11 @@ int main()
         cout << "\n";
 
         if (input == "pri") print_buffer(buffer);
-        else if (input == "min")
-        else if (input == "max")
-        else if (input == "ave")
-        else if (input == "cla")
-        else if (input == "rev")
+        else if (input == "min") break;
+        else if (input == "max") break;
+        else if (input == "ave") break;
+        else if (input == "cla") break;
+        else if (input == "rev") break;
         else cout << "Unwoun Choice.\n"; break;
     }  
 
