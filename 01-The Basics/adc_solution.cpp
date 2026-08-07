@@ -39,16 +39,27 @@ int main()
         x = adc_read();
     }
 
-    cout << "Select: \n"
-         << "pri -> Print Samples\n"
-         << "min -> Minimum Sample\n"
-         << "max -> Maximum Sample\n"
-         << "ave -> Average of Samples\n"
-         << "cla -> Clamp\n"
-         << "rev -> Reverse the Samples\n";
+    while (1)
+    {
+        cout << "Select: \n"
+             << "pri -> Print Samples\n"
+             << "min -> Minimum Sample\n"
+             << "max -> Maximum Sample\n"
+             << "ave -> Average of Samples\n"
+             << "cla -> Clamp\n"
+             << "rev -> Reverse the Samples\n\n";
         
-    cin >> input;
-    cout << input;
-    
+        cin >> input;
+        cout << "\n";
+
+        if (input == "pri") print_buffer(buffer);
+        else if (input == "min")
+        else if (input == "max")
+        else if (input == "ave")
+        else if (input == "cla")
+        else if (input == "rev")
+        else cout << "Unwoun Choice.\n";
+    }  
+
     return 0;
 }
