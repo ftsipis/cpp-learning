@@ -32,7 +32,7 @@ int main()
 {
     // TODO: fill a 16-count buffer by calling adc_read(), then process it.
     int buffer[buffer_size];
-    char* input;
+    string input;
 
     for (auto& x : buffer)
     {
