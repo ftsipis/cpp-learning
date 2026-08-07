@@ -58,7 +58,7 @@ int main()
         else if (input == "ave")
         else if (input == "cla")
         else if (input == "rev")
-        else cout << "Unwoun Choice.\n";
+        else cout << "Unwoun Choice.\n"; break;
     }  
 
     return 0;
