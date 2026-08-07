@@ -23,9 +23,9 @@ void print_buffer(int buffer[])
     }
 }
 
-int minimum (int buffer[])
+void minimum (int buffer[])
 {
-    return min(buffer);
+    cout << min(buffer) << "\n\n";
 }
 
 int main()
@@ -53,7 +53,7 @@ int main()
         cout << "\n";
 
         if (input == "pri") print_buffer(buffer);
-        else if (input == "min") break;
+        else if (input == "min") minimum(buffer);
         else if (input == "max") break;
         else if (input == "ave") break;
         else if (input == "cla") break;
