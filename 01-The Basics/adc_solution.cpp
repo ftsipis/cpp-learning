@@ -23,10 +23,10 @@ void print_buffer(int buffer[])
     }
 }
 
-/*int minimum (int buffer[])
+int minimum (int buffer[])
 {
     return min(buffer);
-}*/
+}
 
 int main()
 {
