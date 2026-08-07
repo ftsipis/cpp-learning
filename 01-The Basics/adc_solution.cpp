@@ -47,8 +47,8 @@ int main()
          << "cla -> Clamp\n"
          << "rev -> Reverse the Samples\n";
         
-    cin >> in;
-    cout << in;
+    cin >> input;
+    cout << input;
     
     return 0;
 }
