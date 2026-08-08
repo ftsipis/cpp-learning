@@ -1,5 +1,7 @@
 #include <iostream>
 #include <random>
+#include <algorithm>
+#include <string>
 
 using namespace std;
 
@@ -27,7 +29,7 @@ void print_buffer(int buffer[])
 int minimum (int buffer[])
 {
     int smallest = buffer[0];
-    for (int x=1; x<buffer_size-1; x++)
+    for (int x=1; x<buffer_size; x++)
     {
         smallest = min(smallest,buffer[x]);
     }
@@ -37,7 +39,7 @@ int minimum (int buffer[])
 int maximum (int buffer[])
 {
     int biggest = buffer[0];
-    for (int x=1; x<buffer_size-1; x++)
+    for (int x=1; x<buffer_size; x++)
     {
         biggest = max(biggest, buffer[x]);
     }
@@ -47,11 +49,11 @@ int maximum (int buffer[])
 int average (int buffer[])
 {
     int sum = buffer[0];
-    for (int x=1; x<buffer_size-1; x++)
+    for (int x=1; x<buffer_size; x++)
     {
         sum = sum + buffer[x];
     }
-    return sum/buffer_size;
+    return static_cast<double>(sum) / buffer_size;
 }
 
 int main()
