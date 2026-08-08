@@ -96,7 +96,7 @@ int main()
         else if (input == "min") cout << minimum(buffer) << "\n\n";
         else if (input == "max") cout << maximum(buffer) << "\n\n";
         else if (input == "ave") cout << average(buffer) << "\n";
-        else if (input == "cla") ;
+        else if (input == "cla") clamp(buffer);
         else if (input == "rev") break;
         else if (input == "exit") break;
         else cout << "Unkwoun Choice. Choose again!\n";
