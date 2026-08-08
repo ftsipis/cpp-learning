@@ -43,6 +43,16 @@ int maximum (int buffer[])
     return biggest;
 }
 
+int average (int buffer[])
+{
+    int sum = buffer[0];
+    for (int x=1; x<buffer_size-1; x++)
+    {
+        sum = sum + buffer[x];
+    }
+    rutern sum/buffer_size;
+}
+
 int main()
 {
     // TODO: fill a 16-count buffer by calling adc_read(), then process it.
@@ -70,7 +80,7 @@ int main()
         if (input == "pri") print_buffer(buffer);
         else if (input == "min") cout << minimum(buffer) << "\n\n";
         else if (input == "max") cout << maximum(buffer) << "\n\n";
-        else if (input == "ave") break;
+        else if (input == "ave") cout << average(buffer) << "\n";
         else if (input == "cla") break;
         else if (input == "rev") break;
         else cout << "Unwoun Choice. Choose again!\n";
