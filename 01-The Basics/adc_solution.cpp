@@ -25,10 +25,10 @@ void print_buffer(int buffer[])
 
 int minimum (int buffer[])
 {
-    int smallest;
-    for (int x=0; x<buffer_size-1; x++)
+    int smallest = buffer[0];
+    for (int x=1; x<buffer_size-1; x++)
     {
-        smallest = min(buffer[x],buffer[x+1]);
+        smallest = min(smallest,buffer[x]);
     }
     return smallest;
 }
