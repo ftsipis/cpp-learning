@@ -17,7 +17,7 @@ int adc_read()
 
 void print_buffer(int buffer[])
 {
-    for (int x=0; x<buffer_size-1; x++)
+    for (int x=0; x<buffer_size; x++)
     {
         cout << buffer[x] << '\n';
     }
@@ -25,12 +25,12 @@ void print_buffer(int buffer[])
 
 int minimum (int buffer[])
 {
-    int min;
-    for (int x=0; x<buffer_size; x++)
+    int smallest;
+    for (int x=0; x<buffer_size-1; x++)
     {
-        min(buffer_size[x],buffer[x+1]);
+        smallest = min(buffer[x],buffer[x+1]);
     }
-    return min;
+    return smallest;
 }
 
 int main()
