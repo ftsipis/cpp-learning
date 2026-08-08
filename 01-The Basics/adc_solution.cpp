@@ -61,7 +61,7 @@ void clamp (int buffer[])
     int value;
     cout << "Give the value for saturation: ";
     cin >> value;
-    for (int x; x<buffer_size; x++)
+    for (int x=0; x<buffer_size; x++)
     {
         if (buffer[x] > value) buffer[x] = value;
     }
