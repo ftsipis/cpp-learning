@@ -59,7 +59,7 @@ double average (int buffer[])
 void clamp (int buffer[])
 {
     cout << "Give the value for saturation: ";
-    cin >> int value;
+    cin >> (int) value;
     for (int x; x<buffer_size; x++)
     {
         if (buffer[x] > value) buffer[x] = value;
