@@ -58,7 +58,7 @@ int main()
         cout << "\n";
 
         if (input == "pri") print_buffer(buffer);
-        else if (input == "min") minimum(buffer);
+        else if (input == "min") cout << minimum(buffer) << "\n";
         else if (input == "max") break;
         else if (input == "ave") break;
         else if (input == "cla") break;
