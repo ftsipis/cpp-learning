@@ -46,16 +46,14 @@ int maximum (int buffer[])
     return biggest;
 }
 
-int average (int buffer[])
+double average (int buffer[])
 {
-    double result;
     int sum = buffer[0];
     for (int x=1; x<buffer_size; x++)
     {
         sum = sum + buffer[x];
     }
-    result = sum / buffer_size;
-    return result;
+    return static_cast<double>(sum) / buffer_size;
 }
 
 int main()
