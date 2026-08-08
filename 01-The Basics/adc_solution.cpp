@@ -65,7 +65,7 @@ void clamp (int buffer[])
     {
         if (buffer[x] > value) buffer[x] = value;
     }
-    cout << "\nThe buffer is saturated.\n";
+    cout << "\nThe buffer is saturated.\n\n";
 }
 
 int main()
@@ -99,7 +99,7 @@ int main()
         else if (input == "cla") clamp(buffer);
         else if (input == "rev") break;
         else if (input == "exit") break;
-        else cout << "Unkwoun Choice. Choose again!\n";
+        else cout << "Unknown Choice. Choose again!\n";
     }  
 
     return 0;
