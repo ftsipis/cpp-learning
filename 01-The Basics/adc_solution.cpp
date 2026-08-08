@@ -19,7 +19,7 @@ void print_buffer(int buffer[])
 {
     for (int x=0; x<buffer_size; x++)
     {
-        cout << buffer[x] << '\n';
+        cout << buffer[x] << "\n\n";
     }
 }
 
@@ -31,6 +31,16 @@ int minimum (int buffer[])
         smallest = min(smallest,buffer[x]);
     }
     return smallest;
+}
+
+int maximum (int buffer[])
+{
+    int biggest = buffer[0];
+    for (int x=1; x<buffer_size-1; x++)
+    {
+        biggest = max(biggest, buffer[x]);
+    }
+    return biggest;
 }
 
 int main()
@@ -58,8 +68,8 @@ int main()
         cout << "\n";
 
         if (input == "pri") print_buffer(buffer);
-        else if (input == "min") cout << minimum(buffer) << "\n";
-        else if (input == "max") break;
+        else if (input == "min") cout << minimum(buffer) << "\n\n";
+        else if (input == "max") cout << maximum(buffer) << "\n\n";
         else if (input == "ave") break;
         else if (input == "cla") break;
         else if (input == "rev") break;
