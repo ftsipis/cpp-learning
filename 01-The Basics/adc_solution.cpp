@@ -58,7 +58,6 @@ double average (int buffer[])
 
 int main()
 {
-    // TODO: fill a 16-count buffer by calling adc_read(), then process it.
     int buffer[buffer_size];
     string input;
 
@@ -67,7 +66,7 @@ int main()
         x = adc_read();
     }
 
-    while (1)
+    while (true)
     {
         cout << "Select: \n"
              << "pri -> Print Samples\n"
@@ -75,7 +74,8 @@ int main()
              << "max -> Maximum Sample\n"
              << "ave -> Average of Samples\n"
              << "cla -> Clamp\n"
-             << "rev -> Reverse the Samples\n\n";
+             << "rev -> Reverse the Samples\n"
+             << "exit -> Exit the Program\n\n";
         
         cin >> input;
         cout << "\n";
@@ -86,7 +86,8 @@ int main()
         else if (input == "ave") cout << average(buffer) << "\n";
         else if (input == "cla") break;
         else if (input == "rev") break;
-        else cout << "Unwoun Choice. Choose again!\n";
+        else if (input == "exit") break;
+        else cout << "Unkwoun Choice. Choose again!\n";
     }  
 
     return 0;
