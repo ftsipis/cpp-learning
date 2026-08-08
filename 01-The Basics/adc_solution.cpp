@@ -56,6 +56,17 @@ double average (int buffer[])
     return static_cast<double>(sum) / buffer_size;
 }
 
+void clamp (int buffer[])
+{
+    cout << "Give the value for saturation: ";
+    cin >> int value;
+    for (int x; x<buffer_size; x++)
+    {
+        if (buffer[x] > value) buffer[x] = value;
+    }
+    cout << "\nThe buffer is saturated.\n";
+}
+
 int main()
 {
     int buffer[buffer_size];
@@ -84,7 +95,7 @@ int main()
         else if (input == "min") cout << minimum(buffer) << "\n\n";
         else if (input == "max") cout << maximum(buffer) << "\n\n";
         else if (input == "ave") cout << average(buffer) << "\n";
-        else if (input == "cla") break;
+        else if (input == "cla") ;
         else if (input == "rev") break;
         else if (input == "exit") break;
         else cout << "Unkwoun Choice. Choose again!\n";
