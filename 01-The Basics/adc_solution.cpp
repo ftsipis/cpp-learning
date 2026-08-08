@@ -19,8 +19,9 @@ void print_buffer(int buffer[])
 {
     for (int x=0; x<buffer_size; x++)
     {
-        cout << buffer[x] << "\n\n";
+        cout << buffer[x] << "\n";
     }
+    cout << '\n';
 }
 
 int minimum (int buffer[])
