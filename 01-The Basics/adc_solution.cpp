@@ -23,7 +23,7 @@ void print_buffer(int buffer[])
     }
 }
 
-void minimum (int buffer[])
+int minimum (int buffer[])
 {
     int min;
     for (int x=0; x<buffer_size; x++)
