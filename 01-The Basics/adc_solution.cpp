@@ -50,7 +50,7 @@ int average (int buffer[])
     {
         sum = sum + buffer[x];
     }
-    rutern sum/buffer_size;
+    return sum/buffer_size;
 }
 
 int main()
