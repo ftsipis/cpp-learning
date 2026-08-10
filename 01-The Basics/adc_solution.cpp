@@ -78,7 +78,7 @@ void reverse (int buffer[])
         temp = *n;
         n = p;
         *p = temp;
-    
+    cout << n << ' '<< p;
 }
 
 int main()
