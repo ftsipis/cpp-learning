@@ -68,6 +68,18 @@ void clamp (int buffer[])
     cout << "\nThe buffer is saturated.\n\n";
 }
 
+void reverse (int buffer[])
+{
+    int* n = buffer[0];
+    int* p = buffer[buffer_size];
+    int temp;
+    //while (n < p)
+    
+        temp = *n;
+        cout << temp;
+    
+}
+
 int main()
 {
     int buffer[buffer_size];
@@ -97,7 +109,7 @@ int main()
         else if (input == "max") cout << maximum(buffer) << "\n\n";
         else if (input == "ave") cout << average(buffer) << "\n";
         else if (input == "cla") clamp(buffer);
-        else if (input == "rev") break;
+        else if (input == "rev") reverse(buffer);
         else if (input == "exit") break;
         else cout << "Unknown Choice. Choose again!\n";
     }  
