@@ -76,7 +76,8 @@ void reverse (int buffer[])
     //while (n < p)
     
         temp = *n;
-        cout << temp;
+        *n = p;
+        *p = temp;
     
 }
 
