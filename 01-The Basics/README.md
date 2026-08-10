@@ -40,13 +40,13 @@ Two real-world rules shape this project:
     would do with those samples is up to you.
 
     Using only Chapter 1 — functions, basic types, `constexpr`, pointers,
-    arrays, references, loops and `if`s (no STL containers) — build an
+    arrays, references, loops and `if` statements (no STL containers) — build an
     interactive program that fills a 16-sample buffer and lets the user
     process it through a menu.
 
     ## What you need to do
 
-    1. Declare a buffer of 16 `int`s and fill it by calling `adc_read()`.
+    1. Declare a buffer of 16 `integers` and fill it by calling `adc_read()`.
     2. Print the buffer.
     3. `minimum` — the smallest sample.
     4. `maximum` — the largest sample.
@@ -60,15 +60,14 @@ Two real-world rules shape this project:
 
        ## Files
 
-       - `ADC.cpp` — starter: `adc_read()` and nothing else.
-       - `ADC_solution.cpp` — one complete solution, with a command menu:
+       - `adc.cpp` — starter: `adc_read()` and nothing else.
+       - `adc_solution.cpp` — one complete solution, with a command menu:
          `pri` print · `min` · `max` · `ave` · `cla` clamp · `rev` reverse · `exit`
 
          ## Build & Run
 
          ```bash
-         g++ ADC.cpp -o adc
-         g++ ADC_solution.cpp -o adc_solution
-         ./adc_solution
+         g++ -std=c++20 -Wall -Wextra ADC.cpp -o adc
+         ./adc
          ```
          
