@@ -80,7 +80,7 @@ void reverse (int buffer[])
         *n = temp2;
         *p = temp1;
         n++;
-        p++;
+        p--;
     }
 }
 
