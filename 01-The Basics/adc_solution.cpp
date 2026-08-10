@@ -72,13 +72,16 @@ void reverse (int buffer[])
 {
     int* n = buffer;
     int* p = buffer + buffer_size - 1;
-    int temp;
-    //while (n < p)
-    
-        temp = *n;
-        n = p;
-        *p = temp;
-        
+    int temp1, temp2;
+    while (n < p)
+    {
+        temp1 = *n;
+        temp2 = *p;
+        n = temp2;
+        p = temp1;
+        n++;
+        p++;
+    }
 }
 
 int main()
