@@ -77,8 +77,8 @@ void reverse (int buffer[])
     {
         temp1 = *n;
         temp2 = *p;
-        n = temp2;
-        p = temp1;
+        *n = temp2;
+        *p = temp1;
         n++;
         p++;
     }
