@@ -71,7 +71,7 @@ void clamp (int buffer[])
 void reverse (int buffer[])
 {
     int* n = buffer;
-    int* p = buffer +  - 1;
+    int* p = buffer + buffer_size - 1;
     int temp;
     //while (n < p)
     
