@@ -76,7 +76,7 @@ void reverse (int buffer[])
     //while (n < p)
     
         temp = *n;
-        *n = p;
+        n = p;
         *p = temp;
     
 }
